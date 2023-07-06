@@ -33,12 +33,12 @@ public class ApplicationCommandRunner implements CommandLineRunner {
         logger.info("# of Authors: {}", authorRepository.count());
 
         Book book1 =
-                Book.builder().title("Java Cookbook").author(author1).genre("Programming").publishedDate(LocalDate.of(2011, 03, 01)).build();
+                Book.builder().title("Java Cookbook").author(author1).genre("Programming").publishedDate(LocalDate.of(2011, 3, 1)).build();
         Book book2 =
-                Book.builder().title("GraphQL Reference Guide").author(author2).genre("Programming").publisher("Abe Books").publishedDate(LocalDate.of(2018, 03, 15)).build();
+                Book.builder().title("GraphQL Reference Guide").author(author2).genre("Programming").publisher("Abe Books").publishedDate(LocalDate.of(2018, 3, 15)).build();
         Book book3 =
                 Book.builder().title("The 1 Minute Manager").author(author3).publisher("William " +
-                        " Morrow Books").genre("Business").publishedDate(LocalDate.of(1982, 02, 01)).build();
+                        " Morrow Books").genre("Business").publishedDate(LocalDate.of(1982, 2, 1)).build();
         bookRepository.saveAll(List.of(book1, book2, book3));
 
         logger.info("# of Books: {}", bookRepository.count());
