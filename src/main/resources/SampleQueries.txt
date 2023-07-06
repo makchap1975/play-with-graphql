@@ -1,0 +1,34 @@
+{
+  bookById(id: 1) {
+    title
+    publisher
+  }
+  bookByTitle(title: "Java Cookbook"){
+    id
+    title
+    publisher
+  }
+  bookByPublisher(publisher: "Abe Books"){
+    id
+    title
+    publisher
+  }
+  books{
+    id
+    title
+    publisher
+    publishedDate
+    genre
+    author{
+      name
+    }
+  }
+  authorById(id: 2){
+    name
+  }
+  authorByName(name: "Tim Lewis"){
+    id
+    name
+  }
+
+}
